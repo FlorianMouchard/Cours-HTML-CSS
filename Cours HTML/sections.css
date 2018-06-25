@@ -1,0 +1,15 @@
+﻿body {
+    background-color: #58b0a0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+        text-decoration: underline;
+}
+
+nav a {
+    color: coral;
+}
