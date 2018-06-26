@@ -3,43 +3,53 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ma première page html</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link href="sections.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <h1>Sections en HTML 5</h1>
-    </header>
-    <nav>
-        <dl>
-            <dt><a href="">Chapitre 1</a></dt>
-            <dd>Le matin</dd>
-        </dl>
-        <dl>
-            <dt><a href="">Chapitre 2</a></dt>
-            <dd>Le soir</dd>
-        </dl>
-        <dl>
-            <dt><a href="">Chapitre 3</a></dt>
-            <dd>La nuit</dd>
-        </dl>
-    </nav>
-    <section>
-        <h2>Chapitre 1</h2>
-        <p>Nulla facilisi. Aliquam mattis posuere nisl quis fermentum. <br /> Praesent venenatis tempus pellentesque. Nullam nec mauris magna. Maecenas semper suscipit massa in porttitor. Nulla ullamcorper magna eu enim vestibulum, eget porttitor ligula aliquam. Sed ut sodales nisl, at sagittis lectus. </p>
-    </section>
-    <section>
-        <h2>Chapitre 2</h2>
-        <p>Nulla facilisi. Aliquam mattis posuere nisl quis fermentum. Praesent venenatis tempus pellentesque. Nullam nec mauris magna. Maecenas semper suscipit massa in porttitor. Nulla ullamcorper magna eu enim vestibulum, eget porttitor ligula aliquam. Sed ut sodales nisl, at sagittis lectus. </p>
-    </section>
-    <section>
-        <h2>Chapitre 3</h2>
-        <p>Nulla facilisi. Aliquam mattis posuere nisl quis fermentum. Praesent venenatis tempus pellentesque. Nullam nec mauris magna. Maecenas semper suscipit massa in porttitor. Nulla ullamcorper magna eu enim vestibulum, eget porttitor ligula aliquam. Sed ut sodales nisl, at sagittis lectus. </p>
-    </section>
-    <footer>
-        <p>
-            &copy; Ma première page html valide <a href="https://validator.w3.org/">W3C</a>
-        </p>
-    </footer>
+    <div id="principal">
+        <header>
+            <h1>Sections en HTML 5</h1>
+        </header>
+        <nav>
+            <dl>
+                <dt><a href="">Chapitre 1</a></dt>
+                <dd>Le matin</dd>
+            </dl>
+            <dl>
+                <dt><a href="">Chapitre 2</a></dt>
+                <dd>Le soir</dd>
+            </dl>
+            <dl>
+                <dt><a href="">Chapitre 3</a></dt>
+                <dd>La nuit</dd>
+            </dl>
+        </nav>
+        <div class="row align-items-start">
+            <section id="chap1">
+                <div class="col-lg-6 col-sm-12">
+                    <h2>Chapitre 1</h2>
+                    <p>Nulla facilisi. Aliquam mattis posuere nisl quis fermentum. Praesent venenatis tempus pellentesque. Nullam nec mauris magna. Maecenas semper suscipit massa in porttitor. Nulla ullamcorper magna eu enim vestibulum, eget porttitor ligula aliquam. Sed ut sodales nisl, at sagittis lectus. </p>
+                </div>
+            </section>
+            <section id="chap2">
+                <div class="col-lg-6 col-sm-12">
+                    <h2>Chapitre 2</h2>
+                    <p>Nulla facilisi. Aliquam mattis posuere nisl quis fermentum. Praesent venenatis tempus pellentesque. Nullam nec mauris magna. Maecenas semper suscipit massa in porttitor. Nulla ullamcorper magna eu enim vestibulum, eget porttitor ligula aliquam. Sed ut sodales nisl, at sagittis lectus. </p>
+                </div>
+            </section>
+            <section id="chap3">
+                <h2>Chapitre 3</h2>
+                <p>Nulla facilisi. Aliquam mattis posuere nisl quis fermentum. Praesent venenatis tempus pellentesque. Nullam nec mauris magna. Maecenas semper suscipit massa in porttitor. Nulla ullamcorper magna eu enim vestibulum, eget porttitor ligula aliquam. Sed ut sodales nisl, at sagittis lectus. </p>
+            </section>
+            <footer>
+                <p>
+                    &copy; Ma première page html valide <a href="https://validator.w3.org/">W3C</a>
+                </p>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>

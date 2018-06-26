@@ -1,15 +1,38 @@
 ﻿body {
     background-color: #58b0a0;
 }
+#principal{
+    width : 960px;
+    margin: 0 auto 0 auto;
+}
 
 a {
     text-decoration: none;
 }
 
-a:hover {
+    a:hover {
         text-decoration: underline;
-}
+    }
 
 nav a {
     color: coral;
+}
+
+#chap1 {
+    /*border: solid red 1px;*/
+    width: 40%;
+    float: left;
+    padding: 20px;    
+}
+
+#chap2 {
+    /*border: solid blue 1px;*/
+    width: 40%;
+    float: left;
+    padding: 20px;
+}
+
+#chap3 {
+    clear: both;
+    border: dotted red 5px;
 }
