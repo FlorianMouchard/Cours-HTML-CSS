@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+</head>
+<body>
+    <ul id="titles">
+        
+    </ul>
+    <script src="httprequest.js"></script>
+    <script>
+        /*let httpRequest = new XMLHttpRequest();
+       
+        httpRequest.open('GET', 'http://jsonplaceholder.typicode.com/posts', true);
+        XMLHttpRequest.onreadystatechange = console.log(httpRequest.responseText);
+        httpRequest.send();*/
+        let httpRequest = getHttpRequest();
+
+        httpRequest.onreadystatechange = () => {
+            if (httpRequest.readyState == 4) {                
+                console.log(httpRequest.responseText);
+                let data = JSON.parse(httpRequest.responseText);
+                let ul = document.querySelector('#titles');
+                for (let item of data) {
+                    ul.innerHTML += `<li>${item.title}</li>`;
+                }
+            }
+            
+        };
+        httpRequest.open('GET', 'http://jsonplaceholder.typicode.com/posts', true);
+        httpRequest.send();
+
+
+    </script>
+</body>
+</html>

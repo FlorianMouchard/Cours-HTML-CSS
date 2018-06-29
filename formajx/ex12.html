@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+</head>
+<body>
+    <script src="httprequest.js"></script>
+    <script>
+     
+        let httpRequest = getHttpRequest();
+
+        httpRequest.onreadystatechange = () => {
+            if (httpRequest.readyState == 4) {
+                alert('Article créé !');
+            }
+            
+        };
+        let titre = 'Le titre';
+        let contenu = 'Le contenu';
+        httpRequest.open('POST', 'http://jsonplaceholder.typicode.com/posts', true);
+        httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        httpRequest.send(`title=${titre}&body${contenu}`);
+    </script>
+</body>
+</html>

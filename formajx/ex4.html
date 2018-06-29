@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+</head>
+<body>
+    <button class="not-redirect">Not redirect</button>
+    <button class="redirect">Redirect</button>
+    <script>
+        const button = document.querySelector(".redirect");
+        button.addEventListener('click', () => {
+            document.location.href = "https://www.w3schools.com/jsref/met_win_alert.asp";
+        });
+    </script>
+</body>
+</html>

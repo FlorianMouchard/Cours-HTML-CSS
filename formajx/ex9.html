@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+    <style type="text/css">
+        .un {
+            height: 100px;
+            width: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>    
+    <div class="un"></div>
+    <button>Change</button>
+    <script>
+        const button = document.querySelector('button');
+        const div = document.querySelector('div');
+        
+        button.addEventListener('click', () => {            
+            /*if (div.classList.contains("un")) {
+                div.classList.remove("un");
+            }else        
+            div.classList.add("un");*/
+            div.classList.toggle("un");
+        });
+        
+    </script>
+</body>
+</html>
