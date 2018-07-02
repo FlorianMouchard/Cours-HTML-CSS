@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                method: "GET",
+                url: "http://jsonplaceholder.typicode.com/posts",
+                success: function (data) {
+                    console.log(data);
+                }
+            });
+            
+        });
+
+        //1
+        /*$(document).ready(function () {
+            $.get('http://jsonplaceholder.typicode.com/posts', function (data) {
+                console.log(data);
+            }
+        });*/
+
+    </script>
+</body>
+</html>
